@@ -1,0 +1,8 @@
+<h1>CAT MASH </h1>
+
+<ul *ngIf="cats">
+  <li *ngFor = "let cat of cats.images" >
+    <img [src]="cat.url">
+    <a  class="cta"> Hey Vote To Me ({{score}}) </a>
+  </li>
+</ul>
